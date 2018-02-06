@@ -51,10 +51,4 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', function () {
-  gulp.watch('dist/scss/**/*.scss', ['sass']);
-  gulp.watch('dist/js/**/*.js', ['js']);
-  gulp.watch('./*.html').on('change', browserSync.reload);
-});
-
 gulp.task('default', ['sass', 'js', 'images', 'serve']);

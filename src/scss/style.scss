@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: deeppink;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 3em;
+    padding-top: 1em;
+}
+
+.artist-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.artist-left {
+    height: 100vh;
+    background-color: #485563;
+}
+
+.artist-right {
+    height: 100vh;
+    background-color: #122131;
+}
+
+.artist-left,
+.artist-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.artist {
+    justify-content: center;
+    align-items: center;
+}
+
+
