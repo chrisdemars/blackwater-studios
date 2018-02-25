@@ -11,15 +11,16 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync').create();
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'js'], function() {
+gulp.task('serve', ['sass', 'js', 'images'], function() {
 
     browserSync.init({
         server: './',
-        browser: "google chrome canary"
+        browser: "google chrome"
     });
 
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js', ['js']);
+    gulp.watch('src/img/**/*.+(png|jpg|jpeg|gif|svg)', ['images']);
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
@@ -46,7 +47,7 @@ gulp.task('js', function() {
 
 // Configure image stuff.
 gulp.task('images', function () {
-  return gulp.src('src/img/**/*.+(png|jpg|gif|svg)')
+  return gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg)')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'));
 });

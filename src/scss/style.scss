@@ -1,3 +1,7 @@
+// ******************************
+// Base Styles
+// ******************************
+
 html {
     box-sizing: border-box;
     min-height: 100%;
@@ -14,8 +18,16 @@ html {
 body {
     background-color: white;
     color: deeppink;
+    font-family: sans-serif;
 }
 
+// img {
+//     max-width: 100%;
+// }
+
+// ******************************
+// Top Artist Styles
+// ******************************
 .hero {
     height: 100vh;
     display: flex;
@@ -29,36 +41,199 @@ body {
     padding-top: 1em;
 }
 
+.artists-top,
+.artist-bottom {
+    color: #ffffff;
+}
+
 .artist-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+.artist-headshot-container {
+    margin-right: 1em;
+}
+
+.right {
+    order: 2;
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+.artist-headshot {
+    width: auto;
+    height: 300px;
+}
+
+.artist-details {
+    flex: 1;
+
+    h2 {
+        padding: 15px 0px;
+    }
 }
 
 .artist-left {
-    height: 100vh;
+    flex: 1;
     background-color: #485563;
 }
 
 .artist-right {
-    height: 100vh;
+    flex: 1;
     background-color: #122131;
 }
 
 .artist-left,
 .artist-right {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    padding: 0 3em;
+}
+
+.artist,
+.artist-bottom {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    .bio {
+        font-size: 1.1em;
+        line-height: 1.4em;
+        padding-bottom: 1em;
+    }
+}
+
+.artist-portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    img {
+        max-width: 100%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+
+// ******************************
+// Bottom Artist Styles
+// ******************************
+.artists-bottom {
+    background-color: #333;
+}
+
+.artist-bottom-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 50px 0px;
+}
+
+.artist-bottom {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.artist-bottom-headshot-container {
+    margin-right: 1em;
+}
+
+.artist-bottom-headshot {
+    width: auto;
+    height: 300px;
+}
+
+.artist-bottom-details {
+    flex: 1;
+
+    h2 {
+        text-align: center;
+        padding: 15px 0px;
+    }
+}
+
+.artist-bottom-portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    img {
+        max-width: 100%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+
+// ******************************
+// Contact Styles
+// ******************************
+.contact {
+    background-color: #4a4949;
+    height: 200px;
+  }
+  
+  .contact__copy {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .contact__copy--small {
+    font-size: 16px;
+  }
+  
+  .contact__copy--large {
+    font-size: 30px;
+  }
+  
+  .contact__copy--padding-top {
+    padding-top: 20px;
+  }
+  
+  .contact__phone-number {
+    color: #fff;
+  }
+  
+  .contact__social-container {
+    text-align: center;
+  }
+  
+  .contact__social-icon {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .contact__address {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+  }
+
+// ******************************
+// Footer Styles
+// ******************************
+.footer {
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.artist {
-    justify-content: center;
-    align-items: center;
+    color: #333;
 }
 
 
