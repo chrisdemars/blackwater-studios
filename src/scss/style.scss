@@ -17,8 +17,8 @@ html {
 
 body {
     background-color: white;
-    color: deeppink;
-    font-family: sans-serif;
+    color:#000;
+    font-family: 'Open Sans', sans-serif;
 }
 
 // img {
@@ -26,7 +26,7 @@ body {
 // }
 
 // ******************************
-// Top Artist Styles
+// Above The Fold Styles
 // ******************************
 .hero {
     height: 100vh;
@@ -41,6 +41,19 @@ body {
     padding-top: 1em;
 }
 
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.fa-arrow-down {
+    padding-top: 50px;
+}
+
+// ******************************
+// Top Artist Styles
+// ******************************
 .artists-top,
 .artist-bottom {
     color: #ffffff;
